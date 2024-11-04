@@ -18,7 +18,8 @@ permalink: /publi/
 
 ### Poster Presentation
 
-* **Bolin Zhang** (Hunan Univ., Nagoya Univ.), Haruya Kyutoku (Aichi Univ. of Technology, Nagoya Univ.), Keisuke Doman (Chukyo Univ., Nagoya Univ.), Takahiro Komamizu (Nagoya Univ.), Chao Yang, Bin Jiang (Hunan Univ.), Ichiro Ide (Nagoya Univ.)，Unified Transformer with Fine-grained Contrastive Learning for Cross-modal Recipe Retrieval. In The 26th Meeting on Image Recognition and Understanding. [MIRU2023, 2023-07-28]. https://cvim.ipsj.or.jp/MIRU2023/program/ (日本最大计算机视觉会议)
+* **Bolin Zhang** (Hunan Univ., Nagoya Univ.), Haruya Kyutoku (Aichi Univ. of Technology, Nagoya Univ.), Keisuke Doman (Chukyo Univ., Nagoya Univ.), Takahiro Komamizu (Nagoya Univ.), Chao Yang, Bin Jiang (Hunan Univ.), Ichiro Ide (Nagoya Univ.)，Unified Transformer with Fine-grained Contrastive Learning for Cross-modal Recipe Retrieval. In The 26th Meeting on Image Recognition and Understanding. [MIRU2023, 2023-07-28]. https://cvim.ipsj.or.jp/MIRU2023/program/ \
+(日本最大计算机视觉会议)
 
 
 

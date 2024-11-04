@@ -21,7 +21,10 @@ permalink: /intro/
 名古屋大学 (Nagoya University)\
 信息学\
 留基委资助博士联合培养\
-导师: 井手 一郎 (Ichiro Ide, Nagoya Univ.)， 駒水 孝裕 (Takahiro Komamizu, Nagoya Univ.), 道満 恵介 (Keisuke Doman, Chukyo Univ.), 久徳 遙矢 (Haruya Kyutoku, Aichi Univ. of Technology)\
+导师: 井手 一郎 (Ichiro Ide, Nagoya Univ.)、\
+駒水 孝裕 (Takahiro Komamizu, Nagoya Univ.)、\
+道満 恵介 (Keisuke Doman, Chukyo Univ.)、\
+久徳 遙矢 (Haruya Kyutoku, Aichi Univ. of Technology)\
 研究方向：菜谱检索
 
 
@@ -36,7 +39,7 @@ permalink: /intro/
 * **2013.09-2017.07**\
 河南理工大学(HPU)\
 信息管理与信息系统\
-工学学士\
+工学学士
 
 
 ### 工作经历
