@@ -56,13 +56,13 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Bolin Zhang"
-  avatar : "/assets/images/70.jpg"
+  name   : "Jianhua Wang"
+  avatar : "/assets/images/jianhua.jpg"
   bio    : "work life balance"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/onlyouzbl
+      url: "https://github.com/onlyouzbl"
 
 footer:
   links:
