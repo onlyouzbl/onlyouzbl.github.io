@@ -1,0 +1,13 @@
+main:
+  - title: "Introduction"
+    url: /intro/
+  - title: "Publication"
+    url: /publi/
+  - title: "Projects"
+    url: /proj/
+  - title: "Services"
+    url: /serv/
+  - title: "Awards"
+    url: "awar"
+  - title: "About"
+    url: /about/
