@@ -9,12 +9,13 @@ permalink: /publi/
 
 * **Bolin Zhang**, Bin Jiang, Chao Yang, Liang Pang. Dual-channel localization networks for moment retrieval with natural language[C]//Proceedings of the 2022 International Conference on Multimedia Retrieval. 2022: 351-359. (CCF B)
 
-* **Bolin Zhang**, Haruya Kyutoku, Keisuke Doman, Takahiro Komamizu, Ichiro Ide, Jiangbo Qian. Cross-modal Recipe Retrieval based on Unified Text Encoder with Fine-grained Contrastive Learning. Knowledge-Based Systems, 2024. (中科院一区)
+* **Bolin Zhang**, Haruya Kyutoku, Keisuke Doman, Takahiro Komamizu, Ichiro Ide, Jiangbo Qian. Cross-modal Recipe Retrieval based on Unified Text Encoder with Fine-grained Contrastive Learning. Knowledge-Based Systems, 2024. (SCI 1#)
 
-* **Bolin Zhang**, Jiangbo Qian. Autoencoder-based unsupervised clustering and hashing[J]. Applied Intelligence, 2021, 51(1): 493-505. (中科院二区)
+* **Bolin Zhang**, Jiangbo Qian. Autoencoder-based unsupervised clustering and hashing[J]. Applied Intelligence, 2021, 51(1): 493-505. (SCI 2#)
 
-* **Bolin Zhang**, Jiangbo Qian, Xijiong Xie, Yu Xin, Yihong Dong. CapsNet-based supervised hashing[J]. Applied Intelligence, 2021, 51: 5912-5926. (中科院二区)
+* **Bolin Zhang**, Jiangbo Qian, Xijiong Xie, Yu Xin, Yihong Dong. CapsNet-based supervised hashing[J]. Applied Intelligence, 2021, 51: 5912-5926. (SCI 2#)
 
+* **Bolin Zhang**, Chao Yang, Bin Jiang, Takahiro Komamizu, Ichiro Ide. Multi-proposal collaboration and multi-task training for weakly-supervised video moment retrieval[J]. International Journal of Machine Learning and Cybernetics, 2025: 1-16. (SCI JCR 2#)
 
 ### Poster Presentation
 
