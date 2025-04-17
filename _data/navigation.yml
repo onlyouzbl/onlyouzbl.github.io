@@ -9,5 +9,7 @@ main:
     url: /serv/
   - title: "Awards"
     url: "awar"
+  - title: "Courses"
+    url: "cour"
   - title: "About"
     url: /about/
