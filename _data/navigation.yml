@@ -8,8 +8,8 @@ main:
   - title: "Services"
     url: /serv/
   - title: "Awards"
-    url: "awar"
+    url: /awar/
   - title: "Courses"
-    url: "cour"
+    url: /cour/
   - title: "About"
     url: /about/
