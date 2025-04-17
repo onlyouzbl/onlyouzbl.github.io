@@ -5,13 +5,13 @@ main:
     url: /publi/
   - title: "Projects"
     url: /proj/
-  - title: "Services"
-    url: /serv/
   - title: "Awards"
     url: /awar/
   - title: "Courses"
     url: /cour/
   - title: "Guidance"
     url: /guid/
+  - title: "Services"
+    url: /serv/
   - title: "About"
     url: /about/
