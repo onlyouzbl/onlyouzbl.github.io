@@ -7,7 +7,7 @@ permalink: /intro/
 **Email:** zhangbolin@nbu.edu.cn
 
 ### Short Biography
-**Zhang Bolin** (张博麟) received his Ph.D. degree in computer science from Hunan University, Changsha, China, in 2024. He was funded by the China Scholarship Council to participate in a joint Ph.D. program at Nagoya University from 2022 to 2023. Since July 2024, he has been with the Faculty of Electrical Engineering and Computer Science, Ningbo University, where he is currently a lecturer. His main research interests are in neuromorphic computing, hashing retrieval, multimodal retrieval, and large multimodal models.
+**Zhang Bolin** (张博麟) received his Ph.D. degree in computer science from Hunan University, Changsha, China, in 2024. He was funded by the China Scholarship Council to participate in a joint Ph.D. program at Nagoya University from 2022 to 2023. Since July 2024, he has been with the Faculty of Electrical Engineering and Computer Science, Ningbo University, where he is currently a lecturer. His main research interests are in multimodal retrieval, hashing retrieval, large multimodal models and neuromorphic computing.
 
 ### 教育背景
 * **2020.09-2024.06**\
@@ -25,7 +25,7 @@ permalink: /intro/
 駒水 孝裕 (Takahiro Komamizu, Nagoya Univ.)、\
 道満 恵介 (Keisuke Doman, Chukyo Univ.)、\
 久徳 遙矢 (Haruya Kyutoku, Aichi Univ. of Technology)\
-研究方向：菜谱检索
+研究方向：菜谱-图像检索
 
 
 * **2017.09-2020.07**\
