@@ -11,5 +11,7 @@ main:
     url: /awar/
   - title: "Courses"
     url: /cour/
+  - title: "Guidance"
+    url: /guid/
   - title: "About"
     url: /about/
