@@ -11,11 +11,11 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>College of Artificial Intelligence, Ningbo University</p>
+
     <p>818 Fenghua Road, Jiangbei District</p>
+    
     <p>Ningbo, Zhejiang, China</p>
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+
 
     
 
