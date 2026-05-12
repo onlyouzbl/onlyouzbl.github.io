@@ -4,8 +4,6 @@
 @string{aps = {American Physical Society,}}
 
 
-
-
 @inproceedings{HCLNet,
 abbr  = {ACM MM},
 author = {Zhang, Bolin and Yang, Chao and Jiang, Bin and Zhou, Xiaokang},
@@ -26,150 +24,30 @@ series = {MM '22},
 selected          = {true},
 code = {https://onlyouzbl.wixsite.com/hclnet},
 html = {https://onlyouzbl.wixsite.com/hclnet},
-pdf = {https://dl.acm.org/doi/epdf/10.1145/3503161.3547963}
+pdf = {https://dl.acm.org/doi/epdf/10.1145/3503161.3547963},
+bibtex_show = {true}
 }
 
 
 
-@article{HCLNet,
-  abbr              = {ACM MM},
-  title             = {Video Moment Retrieval with Hierarchical Contrastive Learning},
-  author            = {Zhang, Bolin and Yang, Chao and Jiang, Bin and Zhou, Xiaokang},
-  abstract          = {This paper explores the task of video moment retrieval (VMR), which aims to localize the temporal boundary of a specific moment from an untrimmed video by a sentence query. Previous methods either extract pre-defined candidate moment features and select the moment that best matches the query by ranking, or directly align the boundary clips of a target moment with the query and predict matching scores. Despite their effectiveness, these methods mostly focus only on aligning the query and single-level clip or moment features, and ignore the different granularities involved in the video itself, such as clip, moment, or video, resulting in insufficient cross-modal interaction. To this end, we propose a Temporal Localization Network with Hierarchical Contrastive Learning (HCLNet) for the VMR task. Specifically, we introduce a hierarchical contrastive learning method to better align the query and video by maximizing the mutual information (MI) between query and three different granularities of video to learn informative representations. Meanwhile, we introduce a self-supervised cycle-consistency loss to enforce the further semantic alignment between fine-grained video clips and query words. Experiments on three standard benchmarks show the effectiveness of our proposed method.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+@article{UTE-FCL,
+title = {Cross-modal recipe retrieval based on unified text encoder with fine-grained contrastive learning},
+journal = {Knowledge-Based Systems},
+volume = {305},
+pages = {112641},
+year = {2024},
+issn = {0950--7051},
+doi = {https://doi.org/10.1016/j.knosys.2024.112641},
+url = {https://www.sciencedirect.com/science/article/pii/S0950705124012759},
+author = {Bolin Zhang and Haruya Kyutoku and Keisuke Doman and Takahiro Komamizu and Ichiro Ide and Jiangbo Qian},
+keywords = {Cross-modal recipe retrieval, Unified text encoder, Contrastive learning},
+abstract = {Cross-modal recipe retrieval is vital for transforming visual food cues into actionable cooking guidance, making culinary creativity more accessible. Existing methods separately encode the recipe Title, Ingredient, and Instruction using different text encoders, then aggregate them to obtain recipe feature, and finally match it with encoded image feature in a joint embedding space. These methods perform well but require significant computational cost. In addition, they only consider matching the entire recipe and the image but ignore the fine-grained correspondence between recipe components and the image, resulting in insufficient cross-modal interaction. To this end, we propose Unified Text Encoder with Fine-grained Contrastive Learning (UTE-FCL) to achieve a simple but efficient model. Specifically, in each recipe, UTE-FCL first concatenates each of the Ingredient and Instruction texts composed of multiple sentences as a single text. Then, it connects these two concatenated texts with the original single-phrase Title to obtain the concatenated recipe. Finally, it encodes these three concatenated texts and the original Title by a Transformer-based Unified Text Encoder (UTE). This proposed structure greatly reduces the memory usage and improves the feature encoding efficiency. Further, we propose fine-grained contrastive learning objectives to capture the correspondence between recipe components and the image at Title, Ingredient, and Instruction levels by measuring the mutual information. Extensive experiments demonstrate the effectiveness of UTE-FCL compared to existing methods.},
+selected          = {true},
+code = {https://github.com/onlyouzbl/UTE-FCL},
+pdf = {https://www.sciencedirect.com/science/article/pii/S0950705124012759/pdfft?md5=cce5ae60919f84b076564f16e6a2857d&pid=1-s2.0-S0950705124012759-main.pdf},
+bibtex_show = {true},
+% preview     = {wave-mechanics.gif},
 }
 
 
 
-
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
-}
-
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
-}
