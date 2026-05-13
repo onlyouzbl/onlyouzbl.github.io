@@ -28,7 +28,29 @@ pdf = {https://dl.acm.org/doi/epdf/10.1145/3503161.3547963},
 bibtex_show = {true}
 }
 
-
+@inproceedings{DCLN,
+abbr  = {ICMR},
+author = {Zhang, Bolin and Jiang, Bin and Yang, Chao and Pang, Liang},
+title = {Dual-Channel Localization Networks for Moment Retrieval with Natural Language},
+year = {2022},
+isbn = {9781450392389},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3512527.3531394},
+doi = {10.1145/3512527.3531394},
+abstract = {According to the given natural language query, moment retrieval aims to localize the most relevant moment in an untrimmed video. The existing solutions for this problem can be roughly divided into two categories based on whether candidate moments are generated: i) Moment-based approach: It pre-cuts the video into a set of candidate moments, performs multimodal fusion, and evaluates matching scores with the query. ii) Clip-based approach: It directly aligns video clips and query with predicting matching scores without generating candidate moments. Both frameworks have respective shortcomings: the moment-based models suffer from heavy computations, while the performance of clip-based models is familiarly inferior to moment-based counterparts. To this end, we design an intuitive and efficient Dual-Channel Localization Network (DCLN) to balance computational cost and retrieval performance. For reducing computational cost, we capture the temporal relations of only a few video moments with the same start or end boundary in the proposed dual-channel structure. The start or end channel map index represents the corresponding video moment's start or end time boundary. For improving model performance, we apply the proposed dual-channel localization network to efficiently encode the temporal relations on the dual-channel map and learn discriminative features to distinguish the matching degree between natural language query and video moments. The extensive experiments on two standard benchmarks demonstrate the effectiveness of our proposed method.},
+booktitle = {Proceedings of the 2022 International Conference on Multimedia Retrieval},
+pages = {351--359},
+numpages = {9},
+keywords = {cross-modal retrieval, dual-channel localization network, moment retrieval with natural language},
+location = {Newark, NJ, USA},
+series = {ICMR '22},
+selected      = {true},
+code = {https://onlyouzbl.wixsite.com/dcln},
+html = {https://onlyouzbl.wixsite.com/dcln},
+pdf = {https://dl.acm.org/doi/epdf/10.1145/3512527.3531394},
+bibtex_show = {true}
+}
 
 @article{UTE-FCL,
 abbr  = {KBS},
@@ -48,6 +70,110 @@ code = {https://github.com/onlyouzbl/UTE-FCL},
 pdf = {https://www.sciencedirect.com/science/article/pii/S0950705124012759/pdfft?md5=cce5ae60919f84b076564f16e6a2857d&pid=1-s2.0-S0950705124012759-main.pdf},
 bibtex_show = {true},
 }
+
+
+
+@ARTICLE{SpikeHCD,
+  abbr  = {TGRS},
+  author={Mei, Zihao and Li, Jianhao and Zhang, Bolin and Wang, Chong and Guo, Lijun and Qian, Jiangbo},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={SpikeHCD: Spiking Transformer With Parallel Neurons and Memory-Enhanced Attention for Hyperspectral Change Detection}, 
+  year={2025},
+  volume={63},
+  number={},
+  pages={1--12},
+  keywords={Neurons;Hyperspectral imaging;Feature extraction;Transformers;Mathematical models;Biological system modeling;Membrane potentials;Computational efficiency;Attention mechanisms;Training;Attention mechanism;change detection (CD);hyperspectral image (HSI);spiking neural networks (SNNs)},
+  abstract={The hyperspectral change detection (CD) is a critical technology in remote sensing, widely applied in urban planning, environmental monitoring, and disaster detection. However, the hyperspectral data exhibits higher spectral dimensionality compared to conventional RGB data, making existing methods struggle to balance high accuracy and low energy consumption. As the third generation of neural networks, spiking neural networks (SNNs) demonstrate the advantage of low energy efficiency, but the iterative computational process in spiking neurons significantly increases training and inference burdens when applied to hyperspectral CD. To address these challenges, we propose a novel spiking Transformer with parallel neurons and memory-enhanced attention for hyperspectral CD named SpikeHCD, the first SNNs specifically designed for hyperspectral CD. SpikeHCD not only maintains a low-energy advantage but also employs a probability-driven parallel spiking neurons (PPSN) to improve the computational efficiency, enabling more effective application in remote sensing tasks. We further design a memory-enhanced spiking attention (MSA) module to enhance temporal modeling capability, and thoroughly extract spatial–spectral features. In addition, a spiking difference module (SDM) is introduced to capture change features across different timesteps. Experimental results demonstrate that SpikeHCD can achieve several state-of-the-art (SOTA) results on multiple hyperspectral datasets, with faster detection, lower energy consumption, and fewer number of parameters. The codes are available at: https://github.com/mzhcode/HCD_snn},
+  url={https://ieeexplore.ieee.org/abstract/document/11268463},
+  doi={10.1109/TGRS.2025.3636865},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11268463},
+  }
+
+
+@article{MGAKD,
+abbr = {TOMM},
+author = {Zhang, Qun and Yang, Chao and Jiang, Bin and Zhang, Bolin},
+title = {Multi-Grained Alignment with Knowledge Distillation for Partially Relevant Video Retrieval},
+year = {2025},
+issue_date = {October 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {10},
+issn = {1551-6857},
+url = {https://doi.org/10.1145/3716388},
+doi = {10.1145/3716388},
+abstract = {Partially Relevant Video Retrieval (PRVR) aims to accurately retrieve the most relevant video in response to a query from untrimmed videos. The analysis of video content can be done at three different granularities: frame-level, clip-level, and video-level. Previous methods have focused on one or two of these levels for alignment, limiting the exploration of the video semantics. Moreover, some methods use video-level alignment and apply a self-attention mechanism to generate video-level features, but this may not be ideal as the entire video may not be relevant to the query. We propose a Multi-Grained Alignment framework with Knowledge Distillation (MGAKD), which purifies the cross-modal alignment knowledge from the Contrastive Language-Image Pre-training (CLIP) model and achieves multi-grained alignment. It extracts cross-modal alignment knowledge from CLIP and imparts this knowledge to the designed student model. For the student model, two branches are designed: an inheritance branch and an exploration branch. The inheritance branch absorbs the knowledge of cross-modal alignment from the CLIP. The exploration branch explores visual features at three granularities: frame-level, clip-level, and video-level. Specifically, we directly align the extracted frame features of the video with the query features to achieve frame-level alignment. In clip-level alignment, the use of Gaussian masks allows for the representation of the beginning, climax, and end of an event. By employing Gaussian masks, we are able to implicitly model clip-level features, resulting in clip features that contain a richer set of contextual information. To further enhance video-level feature exploration, we apply clip-guided attention to generate diverse video-level features based on different queries. This strategy effectively prevents irrelevant video moments from affecting the alignment of videos and queries. We conduct extensive experiments on two publicly available datasets, and the experimental results have surpassed those of the state-of-the-art method, showcasing the superior performance of the proposed method.},
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+month = oct,
+articleno = {285},
+numpages = {22},
+keywords = {Text-Video Retrieval, Partially Relevant Video Retrieval, Multi-modal Alignment},
+pdf={https://dl.acm.org/doi/epdf/10.1145/3716388},
+}
+
+
+
+@article{MCMT,
+  abbr  = {IJMLC},
+  title={Multi-proposal collaboration and multi-task training for weakly-supervised video moment retrieval},
+  author={Zhang, Bolin and Yang, Chao and Jiang, Bin and Komamizu, Takahiro and Ide, Ichiro},
+  abstract = {This study focuses on weakly-supervised Video Moment Retrieval (VMR), aiming to identify a moment semantically similar to the given query within an untrimmed video using only video-level correspondences, without relying on temporal annotations during training. Previous methods either aggregate predictions for all instances in the video, or indirectly address the task by proposing reconstructions for the query. However, these methods often produce low-quality temporal proposals, struggle with distinguishing misaligned moments in the same video, or lack stability due to a reliance on a single auxiliary task. To address these limitations, we present a novel weakly-supervised method called Multi-proposal Collaboration and Multi-task Training (MCMT). Initially, we generate multiple proposals and derive corresponding learnable Gaussian masks from them. These masks are then combined to create a high-quality positive sample mask, highlighting video clips most relevant to the query. Concurrently, we classify other clips in the same video as the easy negative sample and the entire video as the hard negative sample. During training, we introduce forward and inverse masked query reconstruction tasks to impose more substantial constraints on the network, promoting more robust and stable retrieval performance. Extensive experiments on two standard benchmarks affirm the effectiveness of the proposed method in VMR.},
+  journal={International Journal of Machine Learning and Cybernetics},
+  volume={16},
+  number={7},
+  pages={4509--4524},
+  year={2025},
+  publisher={Springer},
+  issn = {1868--808X},
+  bibtex_show = {true},
+  pdf = {https://link.springer.com/content/pdf/10.1007/s13042-024-02520-w.pdf},
+  url = {https://doi.org/10.1007/s13042-024-02520-w},
+  doi = {10.1007/s13042-024-02520-w},
+}
+
+
+@article{AUCH,
+  abbr  = {Appl. Intell.},
+  title={Autoencoder-based unsupervised clustering and hashing},
+  author={Zhang, Bolin and Qian, Jiangbo},
+  abstract = {Faced with a large amount of data and high-dimensional data information in a database, the existing exact nearest neighbor retrieval methods cannot obtain ideal retrieval results within an acceptable retrieval time. Therefore, researchers have begun to focus on approximate nearest neighbor retrieval. Recently, the hashing-based approximate nearest neighbor retrieval method has attracted increasing attention because of its small storage space and high retrieval efficiency. The development of neural networks has also promoted progress in hash learning. However, these methods are mostly supervised. In practical applications, annotating large amounts of data is a very time-consuming and laborious task. Furthermore, efficiently using a large amount of unlabeled data for hash learning is challenging. In this paper, we create a new autoencoder variant to efficiently capture the features of high-dimensional data, and propose an unsupervised deep hashing method for large-scale data retrieval, named as Autoencoder-based Unsupervised Clustering and Hashing (AUCH). By constructing a hashing layer as a hidden layer of the autoencoder, hash learning is performed together with unsupervised clustering by minimizing the overall loss. AUCH can unify unsupervised clustering and retrieval tasks into a single learning model. In addition, the method can use a deep neural network to simultaneously learn feature representations, hashing functions and cluster assignments. Experimental results on standard datasets indicate that AUCH achieves competitive results compared to state-of-the-art models for retrieval and clustering tasks.
+},
+  journal={Applied Intelligence},
+  volume={51},
+  number={1},
+  pages={493--505},
+  year={2021},
+  publisher={Springer},
+  issn = {1573--7497},
+  bibtex_show = {true},
+  pdf = {https://link.springer.com/content/pdf/10.1007/s10489-020-01797-y.pdf},
+  url = {https://doi.org/10.1007/s10489-020-01797-y},
+  doi = {10.1007/s10489-020-01797-y},
+}
+
+
+@article{CSH,
+  abbr  = {Appl. Intell.},
+  title={CapsNet-based supervised hashing},
+  author={Zhang, Bolin and Qian, Jiangbo and Xie, Xijiong and Xin, Yu and Dong, Yihong},
+  abstract = {With the development of Internet technology, an increasing amount of data enters people's daily life, which brings great challenges when users quickly search for interesting images. The existing exact nearest neighbor retrieval methods often fail to obtain results within an acceptable retrieval time, so researchers have begun to focus on approximate nearest neighbor retrieval. Recently, the hashing-based approximate nearest neighbor retrieval method has attracted increasing attention because of its small storage space and high retrieval efficiency. At present, one of the most advanced hashing methods is to use deep neural networks, especially convolutional neural networks (CNN), to obtain image hash codes to achieve fast image retrieval. However, CNN needs a large number of images during training, so it takes a lot of time to obtain training samples. In addition, CNN cannot handle ambiguity well, and a lot of information is lost in the pooling layer; furthermore, CNN cannot learn the hierarchical structure of the image. Aiming to address these problems while making full use of data classification information to guide hash learning in a supervised form to improve retrieval efficiency, we introduce the capsule network into the hash learning and propose CapsNet-based supervised hashing (CSH) to preserve the effective information of an image as much as possible. CSH adds a hashing layer equivalent to hash mapping between the capsule network and the decoder to perform hash learning. By optimizing the objective function defined for capsule network loss, reconstruction loss and hashing quantization loss, feature representations, hashing functions and classification results can be learned from the input data at the same time. To verify the effectiveness of the method, we performed experiments on multiple datasets. The experimental results show that this method is superior to the existing hashing-based image retrieval methods and achieves satisfactory results in image classification performance.
+},
+  journal={Applied Intelligence},
+  volume={51},
+  number={8},
+  pages={5912--5926},
+  year={2021},
+  publisher={Springer},
+  issn = {1573--7497},
+  bibtex_show = {true},
+  pdf = {https://link.springer.com/content/pdf/10.1007/s10489-020-02180-7.pdf},
+  url = {https://doi.org/10.1007/s10489-020-02180-7
+},
+  doi = {10.1007/s10489-020-02180-7},
+}
+
+
 
 
 
