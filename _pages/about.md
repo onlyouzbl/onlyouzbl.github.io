@@ -28,8 +28,6 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
   <p>At Ningbo University, the <strong>Multimodal Understanding and Retrieval Lab</strong> (<span lang="zh-CN">多模态理解与检索实验室</span>) studies how to search and interpret video. We work on finding events from text descriptions, detecting unusual activity in long recordings, and making video analysis more efficient with spiking neural networks.</p>
 </div>
 
-I also contributed to *Fenghua · Canglu* (风华·苍鹭), a collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center. [Explore the project](https://cwang-nbu.github.io/zh/project/%E9%A3%8E%E5%8D%8E%E8%8B%8D%E9%B9%AD-project/) · [Project team](https://cwang-nbu.github.io/zh/)
-
 ## News
 {: #news }
 
@@ -48,6 +46,13 @@ I also contributed to *Fenghua · Canglu* (风华·苍鹭), a collaborative proj
 <summary>View all publications</summary>
 {% bibliography --template home-citation %}
 </details>
+
+## Projects
+{: #projects }
+
+### Fenghua · Canglu （风华·苍鹭）
+
+I contributed to this collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center. [Explore the project](https://cwang-nbu.github.io/zh/project/%E9%A3%8E%E5%8D%8E%E8%8B%8D%E9%B9%AD-project/) · [Project team](https://cwang-nbu.github.io/zh/)
 
 ## Honors & Awards
 {: #honors }
