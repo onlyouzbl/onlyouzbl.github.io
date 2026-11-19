@@ -1,0 +1,28 @@
+orcids:
+  - "0009-0006-1728-9682"
+  - "0000-0002-7373-043X"
+
+# 收到录用通知后，如需提前展示，将 accepted: [] 换成下列格式。
+# 署名顺序按录用稿填写。DOI 可省略。上线后按 DOI 或相同题名合并。
+# accepted:
+#   - title: "论文英文题名"
+#     authors: ["First Author", "Bolin Zhang"]
+#     journal: "期刊全名"
+#     year: 2026
+#     accepted_on: "2026-11-19"  # 可选，填写实际录用日期
+#     summary: "One sentence describing what the study contributes."  # 可选
+#     doi: "10.xxxx/xxxx"
+accepted: []
+
+# 可选的英文短评。新论文会优先使用这里的短评，其次从摘要选取一句；
+# 若没有可用摘要，则展示题名和期刊。
+news_summaries:
+  "10.1109/tmm.2026.3742151": "We match food photos to recipes using a shared text encoder that learns relationships both within a recipe and between recipes and images."
+  "10.1016/j.neucom.2026.135255": "Our model locates an object from an ambiguous description by resolving what the words refer to and selecting the relevant scene information."
+  "10.1109/tbdata.2026.3702369": "DS-Model uses one network to guide a second network as it learns to recognize distracted driving."
+  "10.3390/vehicles8040083": "ICK-PANet combines attention with pyramid convolutions to recognize distracted driving from visual cues at different scales."
+  "10.1109/tgrs.2025.3636865": "SpikeHCD uses a spiking transformer to detect changes between hyperspectral images of the same scene."
+  "10.1007/s13042-024-02520-w": "Our model learns to locate video moments from sentence descriptions without needing start and end times during training."
+  "10.1145/3716388": "Our retrieval model learns from CLIP at the frame, clip, and video levels to find videos in which only part of the footage matches the query."
+  "10.1007/s10489-020-01797-y": "We train an autoencoder to cluster unlabeled data and learn compact hash codes for searching large collections."
+  "10.1007/s10489-020-02180-7": "We use a capsule network to learn compact codes for image retrieval while retaining information about how image features fit together."

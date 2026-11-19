@@ -4,7 +4,7 @@
 
 title: Bolin Zhang (张博麟) # the website title (if blank, full name will be used instead)
 first_name: Bolin
-middle_name: 
+middle_name:
 last_name: Zhang
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -279,14 +279,14 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Zhang]
+  first_name: [Bolin, B.]
 
   style: apa
   locale: en
 
-  source: /_bibliography/
-  bibliography: papers.bib
+  source: _bibliography
+  bibliography: "*.bib"
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.

@@ -1,6 +1,8 @@
 name: Deploy site
 
 on:
+  schedule:
+    - cron: "17 0 * * *" # 08:17 Asia/Shanghai
   push:
     branches:
       - master
@@ -9,6 +11,8 @@ on:
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
+      - "bin/sync_publications.rb"
+      - "bin/journal_news.rb"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -38,6 +42,8 @@ on:
       - "assets/**"
       - "_sass/**"
       - "_scripts/**"
+      - "bin/sync_publications.rb"
+      - "bin/journal_news.rb"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -64,6 +70,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: deploy-site-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
@@ -76,6 +86,8 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Refresh journal publications
+        run: bundle exec ruby bin/sync_publications.rb
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:

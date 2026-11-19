@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      {{ site.title | escape }}
+      · Ningbo University
+    </title>
+    <meta name="description" content="{{ page.description | escape }}">
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/academic-home.css' | relative_url }}">
+  </head>
+  <body id="top">
+    <a class="skip" href="#about-me">Skip to content</a>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="brand" href="#top"><span class="monogram" aria-hidden="true">BZ</span> Homepage</a>
+        <nav aria-label="On this page">
+          <a href="#about-me">About Me</a>
+          <a href="#lab">LIN-AI Lab</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#honors">Honors</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+        </nav>
+      </div>
+    </header>
+    <div class="columns">
+      <aside aria-label="Author profile" class="profile" id="profile">
+        <img class="portrait" src="{{ 'assets/img/prof_pic.jpg' | relative_url }}" width="176" height="176" alt="Bolin Zhang by the river">
+        <div class="identity">
+          <h1>Bolin Zhang <span lang="zh-CN">张博麟</span></h1>
+          <p class="role">Lecturer</p>
+          <p>
+            <a href="https://eecs.nbu.edu.cn/">College of Artificial Intelligence</a><br>
+            <a href="https://www.nbu.edu.cn/">Ningbo University</a>
+          </p>
+        </div>
+        <div class="contacts">
+          <address>
+            818 Fenghua Road, Jiangbei District<br>
+            Ningbo, Zhejiang, China
+          </address>
+          <a href="mailto:{{ site.data.socials.email }}">{{ site.data.socials.email }}</a>
+          <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://cwang-nbu.github.io/zh/authors/bl_zhang/" lang="zh-CN">中文简介 <span aria-hidden="true">↗</span></a>
+        </div>
+      </aside>
+      <main>{{ content }}</main>
+    </div>
+    <footer><span>Bolin Zhang · Ningbo University</span><a href="#top">Back to top ↑</a></footer>
+  </body>
+</html>

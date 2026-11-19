@@ -1,0 +1,66 @@
+<article class="paper{% unless entry.preview %} paper-text{% endunless %}" id="paper-{{ entry.key }}">
+  <div class="paper-figure">
+    <span class="venue-tag">
+      {%- if entry.note == 'Accepted' %}Accepted{% else %}{{ entry.abbr | escape }}{% endif %} · {{ entry.year -}}
+    </span>
+    {% if entry.preview %}
+      {% assign figure = entry.preview | prepend: '/assets/img/publication_preview/' | relative_url %}
+      <a href="{{ figure }}" aria-label="Open the full-size figure for {{ entry.key | escape }}">
+        <img src="{{ figure }}" alt="{{ entry.key }} method diagram" loading="lazy">
+      </a>
+    {% endif %}
+  </div>
+  <div>
+    <h3>
+      {% if entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title | escape }}</a>
+      {%- else -%}
+        {{- entry.title | escape -}}
+      {%- endif %}
+    </h3>
+    <p class="authors">
+      {%- for author in entry.author_array -%}
+        {%- unless forloop.first -%}, {% endunless -%}
+        {% if author.first == 'Bolin' and author.last == 'Zhang' -%}
+          <strong>
+            {{- author.first }}
+            {{ author.last -}}
+          </strong>
+        {%- else -%}
+          {{ author.first }}
+          {{ author.last }}
+        {%- endif -%}
+      {%- endfor -%}
+    </p>
+    <p class="venue">{{ entry.journal | default: entry.booktitle }}, {{ entry.year }}.</p>
+    {% if entry.annotation %}
+      <p class="paper-summary">{{ entry.annotation }}</p>
+    {% endif %}
+    <div class="resources">
+      {% if entry.doi -%}
+        <a href="https://doi.org/{{ entry.doi | escape }}">Paper</a>
+      {%- endif %}
+      {% if entry.html -%}
+        <a href="{{ entry.html }}">Project</a>
+      {%- endif %}
+      {% if entry.code -%}
+        <a href="{{ entry.code }}">Code</a>
+      {%- endif %}
+      {% if entry.pdf -%}
+        <a href="{{ entry.pdf | escape }}">PDF</a>
+      {%- endif %}
+    </div>
+    <div class="disclosures">
+      {% if entry.abstract %}
+        <details>
+          <summary>Abstract</summary>
+          <p>{{ entry.abstract }}</p>
+        </details>
+      {% endif %}
+      <details>
+        <summary>BibTeX</summary>
+        <pre><code>{{ entry.bibtex | hideCustomBibtex | escape }}</code></pre>
+      </details>
+    </div>
+  </div>
+</article>

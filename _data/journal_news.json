@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Unified Text Encoder With Intra- and Inter-Modal Contrastive Learning for Cross-Modal Recipe Retrieval",
+    "doi": "10.1109/tmm.2026.3742151",
+    "journal": "IEEE Transactions on Multimedia",
+    "date": "Oct 2026",
+    "sort_date": "2026-10-09",
+    "status": "DOI registered",
+    "summary": "We match food photos to recipes using a shared text encoder that learns relationships both within a recipe and between recipes and images."
+  },
+  {
+    "title": "DS-Model: Dual-Stream Driver Distraction Detection Model Based on Guiding Learning",
+    "doi": "10.1109/tbdata.2026.3702369",
+    "journal": "IEEE Transactions on Big Data",
+    "date": "Oct 2026",
+    "sort_date": "2026-10-01",
+    "status": "Published",
+    "summary": "DS-Model uses one network to guide a second network as it learns to recognize distracted driving."
+  },
+  {
+    "title": "Improving scene knowledge visual grounding via coreference awareness and adaptive knowledge reallocation",
+    "doi": "10.1016/j.neucom.2026.135255",
+    "journal": "Neurocomputing",
+    "date": "Sep 2026",
+    "sort_date": "2026-09-29",
+    "status": "DOI registered",
+    "summary": "Our model locates an object from an ambiguous description by resolving what the words refer to and selecting the relevant scene information."
+  },
+  {
+    "title": "ICK-PANet: A Multiscale Driver Distraction Detection Network Based on Attention and Pyramid Convolution",
+    "doi": "10.3390/vehicles8040083",
+    "journal": "Vehicles",
+    "date": "Apr 2026",
+    "sort_date": "2026-04-07",
+    "status": "Published online",
+    "summary": "ICK-PANet combines attention with pyramid convolutions to recognize distracted driving from visual cues at different scales."
+  },
+  {
+    "title": "SpikeHCD: Spiking Transformer With Parallel Neurons and Memory-Enhanced Attention for Hyperspectral Change Detection",
+    "doi": "10.1109/tgrs.2025.3636865",
+    "journal": "IEEE Transactions on Geoscience and Remote Sensing",
+    "date": "Nov 2025",
+    "sort_date": "2025-11-25",
+    "status": "DOI registered",
+    "summary": "SpikeHCD uses a spiking transformer to detect changes between hyperspectral images of the same scene."
+  },
+  {
+    "title": "Multi-Grained Alignment with Knowledge Distillation for Partially Relevant Video Retrieval",
+    "doi": "10.1145/3716388",
+    "journal": "ACM Trans. Multimedia Comput. Commun. Appl.",
+    "date": "Oct 2025",
+    "sort_date": "2025-10-14",
+    "status": "Published online",
+    "summary": "Our retrieval model learns from CLIP at the frame, clip, and video levels to find videos in which only part of the footage matches the query."
+  },
+  {
+    "title": "Multi-proposal collaboration and multi-task training for weakly-supervised video moment retrieval",
+    "doi": "10.1007/s13042-024-02520-w",
+    "journal": "International Journal of Machine Learning and Cybernetics",
+    "date": "2025",
+    "sort_date": "2025-01-01",
+    "status": "Published",
+    "summary": "Our model learns to locate video moments from sentence descriptions without needing start and end times during training."
+  },
+  {
+    "title": "Cross-modal recipe retrieval based on unified text encoder with fine-grained contrastive learning",
+    "doi": "10.1016/j.knosys.2024.112641",
+    "journal": "Knowledge-Based Systems",
+    "date": "Dec 2024",
+    "sort_date": "2024-12-01",
+    "status": "Published",
+    "summary": "One text encoder represents a recipe at multiple levels and matches its title, ingredients, and instructions to the food image."
+  },
+  {
+    "title": "CapsNet-based supervised hashing",
+    "doi": "10.1007/s10489-020-02180-7",
+    "journal": "Applied Intelligence",
+    "date": "2021",
+    "sort_date": "2021-01-01",
+    "status": "Published",
+    "summary": "We use a capsule network to learn compact codes for image retrieval while retaining information about how image features fit together."
+  },
+  {
+    "title": "Autoencoder-based unsupervised clustering and hashing",
+    "doi": "10.1007/s10489-020-01797-y",
+    "journal": "Applied Intelligence",
+    "date": "2021",
+    "sort_date": "2021-01-01",
+    "status": "Published",
+    "summary": "We train an autoencoder to cluster unlabeled data and learn compact hash codes for searching large collections."
+  }
+]

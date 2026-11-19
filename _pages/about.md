@@ -1,45 +1,70 @@
 ---
-layout: about
-title: about
+layout: academic-home
+title: About Me
 permalink: /
-# subtitle: Lecturer, <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle: Lecturer, <a href='https://eecs.nbu.edu.cn/'>College of Artificial Intelligence</a>, <a href='https://www.nbu.edu.cn/'>Ningbo University</a>, Ningbo, Zhejiang, China. 
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>College of Artificial Intelligence, Ningbo University</p>
-    <p>818 Fenghua Road, Jiangbei District</p>
-    <p>Ningbo, Zhejiang, China</p>
-
-
-    
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+news_milestones:
+  - sort_date: "2024-07-01"
+    date: July 2024
+    summary: I joined Ningbo University after completing my Ph.D. at Hunan University.
+description: Bolin Zhang's academic homepage at Ningbo University. Research on video moment retrieval, cross-modal hashing, and brain-inspired intelligence.
 ---
 
-I am a Lecturer at the [College of Artificial Intelligence](https://eecs.nbu.edu.cn/), [Ningbo University](https://www.nbu.edu.cn/), Ningbo, Zhejiang, China. I received my Ph.D. degree from [Hunan University](#) in July 2024, and then joined Ningbo University as a faculty member. I obtained my M.S. degree in 2020 under the supervision of [Prof. Jiangbo Qian](#), and completed my Ph.D. under the supervision of [Prof. Bin Jiang](http://csee.hnu.edu.cn/people/jiangbin) and [Assoc. Prof. Chao Yang](http://csee.hnu.edu.cn/people/yangchao). During my doctoral study, I was supported by the China Scholarship Council and visited [Nagoya University](https://www.nagoya-u.ac.jp/), Japan, as a joint Ph.D. student, where I worked with the [Contents Science Lab](https://www.cs.is.i.nagoya-u.ac.jp/) of [Prof. Ichiro Ide](https://www.cs.is.i.nagoya-u.ac.jp/users/ide/) and [Prof. Takahiro Komamizu](https://taka-coma.pro/).
+## About Me
+{: #about-me }
 
-My research centers on information retrieval and brain-inspired intelligence. More specifically, I am interested in text-video cross-modal moment localization, cross-modal retrieval, hashing-based retrieval, and spiking neural networks. These topics are connected by a common goal: learning compact, efficient, and semantically meaningful representations for understanding, retrieving, and matching multimodal data. My recent work explores how retrieval models can better capture fine-grained semantic relationships across modalities, and how brain-inspired computing can provide efficient solutions for large-scale visual and multimodal retrieval.
+I am a lecturer at the [College of Artificial Intelligence](https://eecs.nbu.edu.cn/), [Ningbo University](https://www.nbu.edu.cn/). I study **cross-modal retrieval** and **brain-inspired intelligence**. One question at the center of my work is how to find the few seconds in a long video that match a sentence.
 
-Outside the lab, I am an enthusiastic food lover and have a dream of becoming a food blogger someday. I hope to travel across China and around the world to explore different cuisines, local cultures, and everyday stories behind food. I also enjoy running and am currently trying to keep it as a regular habit, with the hope of completing a marathon in the future.
+My research interests include video moment localization, hashing for large-scale retrieval, and spiking neural networks. I also work on matching food photographs with recipes, where a dish’s name, ingredients, and cooking instructions each offer different clues.
 
+I received my Ph.D. from Hunan University in 2024, advised by [Bin Jiang](https://csee.hnu.edu.cn/people/jiangbin) and [Chao Yang](https://csee.hnu.edu.cn/people/yangchao). With support from the China Scholarship Council, I visited the [Contents Science Lab](https://www.cs.is.i.nagoya-u.ac.jp/) at Nagoya University and worked with [Ichiro Ide](https://www.cs.is.i.nagoya-u.ac.jp/users/ide/) and [Takahiro Komamizu](https://taka-coma.pro/).
 
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Outside the lab, I enjoy running and traveling in search of regional food. Someday I’d like to write a food blog and finish a marathon.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+## Our Lab
+{: #lab }
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+<div class="lab-intro">
+  <img class="lab-logo" src="{{ 'assets/img/lin-ai-lab.svg' | relative_url }}" width="1400" height="580" alt="LIN-AI Lab · 麟智实验室">
+  <p>At Ningbo University, the <strong>Multimodal Understanding and Retrieval Lab</strong> (<span lang="zh-CN">多模态理解与检索实验室</span>) studies how to search and interpret video. We work on finding events from text descriptions, detecting unusual activity in long recordings, and making video analysis more efficient with spiking neural networks.</p>
+</div>
+
+I also contributed to *Fenghua · Canglu* (风华·苍鹭), a collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center. [Explore the project](https://cwang-nbu.github.io/zh/project/%E9%A3%8E%E5%8D%8E%E8%8B%8D%E9%B9%AD-project/) · [Project team](https://cwang-nbu.github.io/zh/)
+
+## News
+{: #news }
+
+<div markdown="0">
+{% include journal-news.liquid %}
+</div>
+
+## Selected Publications
+{: #publications }
+
+<div class="papers" markdown="0">
+{% bibliography --template home-paper --group_by none --query @*[selected=true]* %}
+</div>
+
+[View all publications →]({{ '/publications/' | relative_url }}){: .all-papers }
+
+## Honors & Awards
+{: #honors }
+
+- **2025** · Hu Lan Outstanding Doctoral Fund Award, Ningbo University (宁波大学胡岚优秀博士基金奖励).
+- **2025** · First Prize for Scientific and Technological Progress, China General Chamber of Commerce. Third of twelve contributors.
+- Outstanding Doctoral Dissertation, Hunan Association for Artificial Intelligence (湖南省人工智能学会优秀博士学位论文).
+{: .dated-list }
+
+## Education
+{: #education }
+
+- **2024** · Ph.D. in Computer Science and Technology, Hunan University.
+- **2020** · Master’s in Computer Technology, Ningbo University. Advisor: Jiangbo Qian.
+- **2017** · Bachelor’s in Information Management and Information Systems, Henan Polytechnic University.
+{: .dated-list }
+
+## Experience
+{: #experience }
+
+- **July 2024 – present** · Lecturer, College of Artificial Intelligence, Ningbo University.
+- **During my Ph.D.** · Visiting doctoral student, Graduate School of Informatics, Nagoya University, Japan.
+{: .dated-list }

@@ -1,0 +1,31 @@
+{% assign news = site.data.journal_news | concat: page.news_milestones | sort: 'sort_date' | reverse %}
+{% for item in news %}
+  {% if forloop.first %}<ul class="dated-list">{% endif %}
+  {% if forloop.index == 5 %}
+    </ul>
+    <details class="earlier-news">
+      <summary class="all-papers">Earlier news</summary>
+      <ul class="dated-list">
+  {% endif %}
+  <li>
+    <strong>{{ item.date | escape }}</strong> ·
+    {% if item.journal %}
+      {% if item.status == 'Accepted' -%}
+        Accepted by
+      {%- elsif item.status == 'DOI registered' -%}
+        DOI registered ·
+      {%- elsif item.status == 'Forthcoming' -%}
+        Forthcoming in
+      {%- endif %}
+      {% if item.doi and item.doi != '' %}<a href="https://doi.org/{{ item.doi | escape }}" title="{{ item.title | escape }}">{% endif -%}
+      <em>{{ item.journal | escape }}</em>{% if item.doi and item.doi != '' %}</a>{% endif %}.
+      {{ item.summary | default: item.title | escape }}
+    {% else %}
+      {{ item.summary | escape }}
+    {% endif %}
+  </li>
+  {% if forloop.last %}
+    </ul>
+    {% if news.size > 4 %}</details>{% endif -%}
+  {%- endif %}
+{% endfor %}
