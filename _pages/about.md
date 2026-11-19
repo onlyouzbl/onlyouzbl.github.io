@@ -50,14 +50,7 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 ## Projects
 {: #projects }
 
-### Fenghua · Canglu （风华·苍鹭）
-
-I contributed to this collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center.
-
-<div class="project-actions">
-  <a href="https://onlyouzbl.github.io/projects/fenghua-canglu/" target="_blank" rel="noopener">Explore the project</a>
-  <a href="https://onlyouzbl.github.io/projects/fenghua-canglu/team/" target="_blank" rel="noopener">Project team</a>
-</div>
+### 浙江省自然科学基金青年项目
 
 ## Honors & Awards
 {: #honors }
