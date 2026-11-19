@@ -1,19 +1,11 @@
-<article class="paper{% unless entry.preview %} paper-text{% endunless %}" id="paper-{{ entry.key }}">
-  <div class="paper-figure">
-    <span class="venue-tag">
-      {%- if entry.note == 'Accepted' %}Accepted{% else %}{{ entry.abbr | escape }}{% endif %} · {{ entry.year -}}
-    </span>
-    {% if entry.preview %}
-      {% assign figure = entry.preview | prepend: '/assets/img/publication_preview/' | relative_url %}
-      <a href="{{ figure }}" aria-label="Open the full-size figure for {{ entry.key | escape }}">
-        <img src="{{ figure }}" alt="{{ entry.key }} method diagram" loading="lazy">
-      </a>
-    {% endif %}
-  </div>
+<article class="paper" id="paper-{{ entry.key }}">
+  <span class="venue-tag">{% if entry.note == 'Accepted' %}Accepted{% else %}{{ entry.abbr | default: entry.journal | default: entry.booktitle | escape }}{% endif %} · {{ entry.year }}</span>
   <div>
     <h3>
       {% if entry.doi -%}
         <a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title | escape }}</a>
+      {%- elsif entry.url -%}
+        <a href="{{ entry.url | escape }}">{{ entry.title | escape }}</a>
       {%- else -%}
         {{- entry.title | escape -}}
       {%- endif %}

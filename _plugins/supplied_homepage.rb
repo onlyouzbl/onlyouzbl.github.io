@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'base64'
 require 'nokogiri'
 
 # Preserve the supplied HTML verbatim until a publication section has new data.
@@ -33,16 +32,7 @@ module SuppliedHomepage
       end
       next if previous == current
 
-      if selector == '.papers'
-        after.css('.paper-figure a').each do |link|
-          img = link.at_css('img')
-          filename = site.in_dest_dir(img['src'].delete_prefix(site.config['baseurl'].to_s).sub(%r{\A/}, ''))
-          type = File.extname(filename).downcase.delete_prefix('.').sub(/\Ajpg\z/, 'jpeg')
-          img['src'] = "data:image/#{type};base64,#{Base64.strict_encode64(File.binread(filename))}"
-          link['href'] = '#figure-viewer'
-          link.add_class('zoom-figure')
-        end
-      elsif selector == '#full-list'
+      if selector == '#full-list'
         after.at_css('summary').content = "View all publications (#{after.css('li').size})"
         after.css('h2.bibliography').each { |heading| heading.name = 'h3' }
         after.css('ol.bibliography').each { |list| list.name = 'ul' }

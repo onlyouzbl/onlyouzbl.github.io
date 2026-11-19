@@ -258,35 +258,10 @@ main p {
   border-top: 1px solid var(--line);
 }
 .paper {
-  display: grid;
-  grid-template-columns: minmax(145px, 32%) minmax(0, 1fr);
-  gap: 24px;
   padding: 20px 0 24px;
 }
 .bibliography > li:first-child .paper {
   padding-top: 3px;
-}
-.paper-text {
-  display: block;
-}
-.paper-text .paper-figure {
-  margin-bottom: 2px;
-}
-.paper-figure a {
-  display: grid;
-  place-items: center;
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  padding: 8px;
-  aspect-ratio: 1.85;
-  overflow: hidden;
-}
-.paper-figure img {
-  width: 100%;
-  height: 100%;
-  max-height: 160px;
-  object-fit: contain;
 }
 .venue-tag {
   display: inline-block;
@@ -388,13 +363,6 @@ footer {
   }
   nav a {
     white-space: nowrap;
-  }
-  .paper {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .paper-figure {
-    max-width: 350px;
   }
 }
 @media (max-width: 680px) {

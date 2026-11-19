@@ -35,11 +35,11 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 {% include journal-news.liquid %}
 </div>
 
-## Selected Publications
+## Publications
 {: #publications }
 
 <div class="papers" markdown="0">
-{% bibliography --template home-paper --group_by none --query @*[selected=true]* %}
+{% bibliography --template home-paper --group_by none %}
 </div>
 
 <details id="full-list" markdown="0">

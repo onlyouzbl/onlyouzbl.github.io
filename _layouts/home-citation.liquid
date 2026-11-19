@@ -1,5 +1,7 @@
 {% if entry.doi -%}
   <a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title | escape }}</a>
+{%- elsif entry.url -%}
+  <a href="{{ entry.url | escape }}">{{ entry.title | escape }}</a>
 {%- else -%}
   <span>{{ entry.title | escape }}</span>
 {%- endif %}

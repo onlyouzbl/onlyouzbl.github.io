@@ -36,6 +36,14 @@
     "summary": "ICK-PANet combines attention with pyramid convolutions to recognize distracted driving from visual cues at different scales."
   },
   {
+    "title": "Dual-Flow Driver Distraction Driving Detection Model Based on Sobel Edge Detection",
+    "doi": "10.3390/vehicles8040074",
+    "journal": "Vehicles",
+    "date": "2026",
+    "sort_date": "2026-01-01",
+    "status": "Published"
+  },
+  {
     "title": "SpikeHCD: Spiking Transformer With Parallel Neurons and Memory-Enhanced Attention for Hyperspectral Change Detection",
     "doi": "10.1109/tgrs.2025.3636865",
     "journal": "IEEE Transactions on Geoscience and Remote Sensing",
@@ -70,6 +78,30 @@
     "sort_date": "2024-12-01",
     "status": "Published",
     "summary": "One text encoder represents a recipe at multiple levels and matches its title, ingredients, and instructions to the food image."
+  },
+  {
+    "title": "DE-GAN: Text-to-image synthesis with dual and efficient fusion model",
+    "doi": "10.1007/s11042-023-16377-8",
+    "journal": "Multimedia Tools and Applications",
+    "date": "2024",
+    "sort_date": "2024-01-01",
+    "status": "Published"
+  },
+  {
+    "title": "OSAGGAN: one-shot unsupervised image-to-image translation using attention-guided generative adversarial networks",
+    "doi": "10.1007/s13042-023-01844-3",
+    "journal": "International Journal of Machine Learning and Cybernetics",
+    "date": "2023",
+    "sort_date": "2023-01-01",
+    "status": "Published"
+  },
+  {
+    "title": "MAGAN: Unsupervised low-light image enhancement guided by mixed-attention",
+    "doi": "10.26599/bdma.2021.9020020",
+    "journal": "Big Data Mining and Analytics",
+    "date": "2022",
+    "sort_date": "2022-01-01",
+    "status": "Published"
   },
   {
     "title": "CapsNet-based supervised hashing",
