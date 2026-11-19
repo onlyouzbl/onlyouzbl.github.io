@@ -4,8 +4,8 @@ permalink: /lab/
 title: 麟智实验室
 subtitle: LIN-AI Lab · Multimodal Understanding and Retrieval Lab
 description: 宁波大学多模态理解与检索实验室的研究方向，包括视频片段检索、长视频异常检测和脉冲神经网络。
-back_url: /#lab
-back_label: 返回主页实验室简介
+back_url: /
+back_label: 返回主页
 related_url: /#publications
 related_label: 查看张博麟的研究论文
 ---
