@@ -25,7 +25,7 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 
 <div class="lab-intro">
   <img class="lab-logo" src="{{ 'assets/img/lin-ai-lab.svg' | relative_url }}" width="1400" height="580" alt="LIN-AI Lab · 麟智实验室">
-  <p>At Ningbo University, the <strong>Multimodal Understanding and Retrieval Lab</strong> (<span lang="zh-CN">多模态理解与检索实验室</span>) studies how to search and interpret video. We work on finding events from text descriptions, detecting unusual activity in long recordings, and making video analysis more efficient with spiking neural networks.</p>
+  <p>At Ningbo University, the <strong>Multimodal Understanding and Retrieval Lab</strong> (<span lang="zh-CN">多模态理解与检索实验室</span>) studies how to search and interpret video. We work on finding events from text descriptions, detecting unusual activity in long recordings, and making video analysis more efficient with spiking neural networks. <a href="https://onlyouzbl.github.io/lab/">Explore LIN-AI Lab</a></p>
 </div>
 
 ## News
