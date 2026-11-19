@@ -52,7 +52,15 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 
 ### Fenghua · Canglu （风华·苍鹭）
 
-I contributed to this collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center. [Explore the project](https://cwang-nbu.github.io/zh/project/%E9%A3%8E%E5%8D%8E%E8%8B%8D%E9%B9%AD-project/) · [Project team](https://cwang-nbu.github.io/zh/)
+I contributed to this collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center.
+
+<div class="project-actions">
+  <details>
+    <summary>Project overview</summary>
+    <p>Fenghua · Canglu is a video understanding model built on Huawei’s Ascend AI platform. It helps users search recorded footage and detect unusual activity. The team presented the model at the 2023 World Artificial Intelligence Conference.</p>
+  </details>
+  <a href="#lab">LIN-AI Lab</a>
+</div>
 
 ## Honors & Awards
 {: #honors }

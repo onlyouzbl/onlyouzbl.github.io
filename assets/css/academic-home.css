@@ -192,6 +192,34 @@ main h2:first-child {
 main p {
   margin: 0 0 12px;
 }
+.project-actions {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.project-actions details[open] {
+  flex-basis: 100%;
+}
+.project-actions summary,
+.project-actions > a {
+  width: fit-content;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+  background: var(--wash);
+  color: var(--link);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.project-actions summary:hover,
+.project-actions > a:hover {
+  border-color: var(--link);
+}
+
 .lab-intro {
   display: grid;
   grid-template-columns: minmax(190px, 32%) minmax(0, 1fr);
