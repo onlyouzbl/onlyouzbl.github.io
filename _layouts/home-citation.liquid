@@ -1,0 +1,13 @@
+{% if entry.doi -%}
+  <a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title | escape }}</a>
+{%- else -%}
+  <span>{{ entry.title | escape }}</span>
+{%- endif %}
+<p class="authors">
+  {%- for author in entry.author_array -%}
+    {% unless forloop.first %}, {% endunless -%}
+    {{ author.first | escape }}
+    {{ author.last | escape }}
+  {%- endfor -%}
+</p>
+<p class="venue">{{ entry.journal | default: entry.booktitle | escape }}, {{ entry.year | escape }}</p>

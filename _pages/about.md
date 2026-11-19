@@ -44,7 +44,10 @@ I also contributed to *Fenghua · Canglu* (风华·苍鹭), a collaborative proj
 {% bibliography --template home-paper --group_by none --query @*[selected=true]* %}
 </div>
 
-[View all publications →]({{ '/publications/' | relative_url }}){: .all-papers }
+<details id="full-list" markdown="0">
+<summary>View all publications</summary>
+{% bibliography --template home-citation %}
+</details>
 
 ## Honors & Awards
 {: #honors }
