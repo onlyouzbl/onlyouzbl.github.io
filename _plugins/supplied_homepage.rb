@@ -24,7 +24,14 @@ module SuppliedHomepage
       before = page.at_css(selector)
       after = built.at_css(selector)
       raise "Missing homepage section #{selector}" unless before && after
-      next if publications(before, items) == publications(after, items)
+      previous = publications(before, items)
+      current = publications(after, items)
+      # Records sharing a date can be returned in either order by the source.
+      if selector == '#news + div'
+        previous.sort!
+        current.sort!
+      end
+      next if previous == current
 
       if selector == '.papers'
         after.css('.paper-figure a').each do |link|
