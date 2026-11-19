@@ -22,6 +22,10 @@ def journal_news(records, works, settings, today: Date.today)
       date = [entry[:year].to_i] if date.empty?
       status = 'Accepted'
     else
+      if work.empty? && entry[:published_online]
+        published = Date.iso8601(entry[:published_online].to_s)
+        work = { 'published-online' => { 'date-parts' => [[published.year, published.month, published.day]] } }
+      end
       date, status = news_publication_date(work, entry[:year].to_i, today)
     end
 
