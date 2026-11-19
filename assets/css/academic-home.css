@@ -198,10 +198,6 @@ main p {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.project-actions details[open] {
-  flex-basis: 100%;
-}
-.project-actions summary,
 .project-actions > a {
   width: fit-content;
   padding: 0.35rem 0.8rem;
@@ -215,7 +211,6 @@ main p {
   text-decoration: none;
   cursor: pointer;
 }
-.project-actions summary:hover,
 .project-actions > a:hover {
   border-color: var(--link);
 }

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} · LIN-AI Lab</title>
+    <meta name="description" content="{{ page.description | escape }}">
+    <style>
+      :root { color-scheme: light dark; --paper: #fff; --ink: #20313b; --muted: #586d78; --link: #175678; --line: #dce3e7; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.8 system-ui, sans-serif; }
+      header, main, footer { max-width: 52rem; margin: auto; padding-inline: clamp(1.2rem, 5vw, 3rem); }
+      header { padding-block: 1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); }
+      header img { display: block; width: 8rem; height: auto; background: white; border-radius: .25rem; }
+      main { padding-block: clamp(2rem, 7vw, 4.5rem) 2rem; }
+      h1, h2 { line-height: 1.35; font-family: Georgia, "Songti SC", serif; }
+      h1 { margin: 0; font-size: clamp(2.1rem, 6vw, 3.4rem); }
+      h2 { font-size: 1.4rem; margin: 2rem 0 .5rem; }
+      p { margin: .5rem 0 1rem; }
+      a { color: var(--link); text-underline-offset: .2em; }
+      .subtitle { color: var(--muted); margin: .55rem 0 1.8rem; }
+      footer { padding-block: 1.2rem 3rem; border-top: 1px solid var(--line); }
+      @media (prefers-color-scheme: dark) { :root { --paper: #15212a; --ink: #e3ecf1; --muted: #acbfc9; --link: #98d0ea; --line: #3a4a54; } }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/#lab"><img src="/assets/img/lin-ai-lab.svg" alt="麟智实验室 · LIN-AI Lab"></a>
+      <a href="/#projects">返回主页项目区</a>
+    </header>
+    <main>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="subtitle" lang="en">{{ page.subtitle | escape }}</p>
+      {{ content }}
+    </main>
+    <footer><a href="{{ page.related_url | escape }}">{{ page.related_label | escape }} →</a></footer>
+  </body>
+</html>

@@ -55,11 +55,8 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 I contributed to this collaborative project on video retrieval and anomaly detection with Huawei and the Ningbo Computing Center.
 
 <div class="project-actions">
-  <details>
-    <summary>Project overview</summary>
-    <p>Fenghua · Canglu is a video understanding model built on Huawei’s Ascend AI platform. It helps users search recorded footage and detect unusual activity. The team presented the model at the 2023 World Artificial Intelligence Conference.</p>
-  </details>
-  <a href="#lab">LIN-AI Lab</a>
+  <a href="https://onlyouzbl.github.io/projects/fenghua-canglu/" target="_blank" rel="noopener">Explore the project</a>
+  <a href="https://onlyouzbl.github.io/projects/fenghua-canglu/team/" target="_blank" rel="noopener">Project team</a>
 </div>
 
 ## Honors & Awards
