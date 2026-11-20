@@ -1,25 +1,30 @@
 ---
-layout: lab-project
+layout: lab
 permalink: /lab/
-title: 麟智实验室
-subtitle: LIN-AI Lab · Multimodal Understanding and Retrieval Lab
-description: 宁波大学多模态理解与检索实验室的研究方向，包括视频片段检索、长视频异常检测和脉冲神经网络。
-back_url: /
-back_label: 返回主页
-related_url: /#publications
-related_label: 查看张博麟的研究论文
+title: LIN-AI Lab
+description: The Multimodal Understanding and Retrieval Lab at Ningbo University, led by Bolin Zhang.
 ---
 
-宁波大学多模态理解与检索实验室关注一个具体问题：给定一段长视频和一句话，计算机能否找出这句话描述的事件，并指出它从哪里开始、在哪里结束？
+<section id="about" class="intro" aria-labelledby="about-heading">
+  <img src="/assets/img/lin-ai-lab.svg" width="1400" height="580" alt="LIN-AI Lab · 麟智实验室">
+  <div>
+    <h2 id="about-heading">About the Lab</h2>
+    <p>The Multimodal Understanding and Retrieval Lab (LIN-AI Lab) was founded at Ningbo University on <time datetime="2026-11-05">November 5, 2026</time>. Led by <a href="/">Bolin Zhang</a>, the lab focuses on multimodal retrieval. We study how a query in one form, such as a sentence, can help us find relevant information in another, such as a video.</p>
+    <p class="motto"><em>Bringing talent together, shaping the future through intelligence.</em> <span lang="zh-CN">麟聚英才，智启未来</span></p>
+  </div>
+</section>
 
-## 用文字查找视频片段
+<section id="video-retrieval">
+  <h2>Video Moment Retrieval</h2>
+  <p>Given a description such as “a person pushes a bicycle across the street,” can a system find the moment the crossing begins and ends? We study how to match words to actions in long videos, including when the training examples have descriptions but no timestamps.</p>
+</section>
 
-以“一个人把自行车推过马路”为例，检索系统需要区分骑车和推车，也需要找到过马路的那段画面。我们研究如何把描述中的动作与连续画面对齐，尤其关注训练数据只有文字描述、缺少逐段时间标注时的定位问题。
+<section id="anomaly-detection">
+  <h2>Video Anomaly Detection</h2>
+  <p>Some events are hard to describe in advance. We study how to identify moments in long recordings that warrant a closer look. Context matters: a person running on a track may mean something different from a person running through a crowded station.</p>
+</section>
 
-## 发现长视频中的异常活动
-
-当待查找的事件难以事先用一句话描述时，另一种办法是从录像中标出值得复核的片段。我们关注动作及其发生的上下文，例如，同样是奔跑，出现在运动场和出现在其他场景可能有不同含义。
-
-## 用脉冲神经网络分析视频
-
-相邻视频帧往往包含大量重复信息。我们探索如何用脉冲神经网络表示随时间发生的变化，以及这种表示能否在保留事件线索的同时减少计算。
+<section id="spiking-networks">
+  <h2>Spiking Neural Networks for Video</h2>
+  <p>Consecutive video frames often contain much of the same information. We explore how spiking neural networks can represent changes over time and whether they can reduce computation while retaining the cues needed to recognize an event.</p>
+</section>
