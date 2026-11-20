@@ -14,17 +14,41 @@ description: The Multimodal Understanding and Retrieval Lab at Ningbo University
   </div>
 </section>
 
-<section id="video-retrieval">
-  <h2>Video Moment Retrieval</h2>
-  <p>Given a description such as “a person pushes a bicycle across the street,” can a system find the moment the crossing begins and ends? We study how to match words to actions in long videos, including when the training examples have descriptions but no timestamps.</p>
+<section id="members" aria-labelledby="members-heading">
+  <h2 id="members-heading">Lab Members</h2>
+  <div class="lab-lead">
+    <h3><a href="/">Bolin Zhang <span lang="zh-CN">张博麟</span></a></h3>
+    <p>Lab Director</p>
+    <p><strong>Research interests</strong> · Multimodal retrieval and video moment retrieval from large video collections.</p>
+  </div>
+  <div class="cohort">
+    <div><h3>Students</h3><p>Entered <time datetime="2026-09">September 2026</time></p></div>
+    <div class="students">
+      {% for slot in (1..2) %}
+      <div class="student">
+        <div class="student-photo" aria-label="Student photo, pending" role="img"></div>
+        <dl>
+          <dt>English name</dt><dd></dd>
+          <dt>Chinese name</dt><dd></dd>
+          <dt>Research interests</dt><dd></dd>
+        </dl>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
-<section id="anomaly-detection">
-  <h2>Video Anomaly Detection</h2>
-  <p>Some events are hard to describe in advance. We study how to identify moments in long recordings that warrant a closer look. Context matters: a person running on a track may mean something different from a person running through a crowded station.</p>
+<section id="research">
+  <h2>Research Areas</h2>
+  <h3>Video Moment Retrieval from Large Video Collections</h3>
+  <p>Given a description such as “a person pushes a bicycle across the street,” we want to find both the right video in a collection and the exact interval it describes. We study how to distinguish similar actions and learn their boundaries when training examples have captions but no timestamps.</p>
+  <h3>Video Anomaly Detection</h3>
+  <p>We study how to identify moments in long recordings that warrant a closer look. Context matters: running on a track may mean something different from running through a crowded station.</p>
+  <h3>Spiking Neural Networks for Video</h3>
+  <p>Consecutive frames often contain much of the same information. We explore whether spiking neural networks can reduce computation by responding to changes while retaining the cues needed to recognize an event.</p>
 </section>
 
-<section id="spiking-networks">
-  <h2>Spiking Neural Networks for Video</h2>
-  <p>Consecutive video frames often contain much of the same information. We explore how spiking neural networks can represent changes over time and whether they can reduce computation while retaining the cues needed to recognize an event.</p>
+<section id="publications">
+  <h2>Publications</h2>
+  <p><a href="/#publications">Browse Bolin Zhang’s publications</a></p>
 </section>
