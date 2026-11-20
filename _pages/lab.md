@@ -68,13 +68,17 @@ description: The Multimodal Understanding and Retrieval Lab at Ningbo University
 
 <section id="lab-life" markdown="0">
   <h2>Lab Life</h2>
-  {% if site.data.lab_activities.size > 0 %}
-    <div class="activity-gallery">
-      {% for activity in site.data.lab_activities %}
-        <figure><img loading="lazy" src="{{ activity.photo | relative_url | escape }}" alt="{{ activity.alt | escape }}"><figcaption>{{ activity.caption | escape }}</figcaption></figure>
+  <div class="activity-gallery">
+    {% for activity in site.data.lab_activities %}
+      <figure><img loading="lazy" src="{{ activity.photo | relative_url | escape }}" alt="{{ activity.alt | escape }}"><figcaption>{{ activity.caption | escape }}</figcaption></figure>
+    {% else %}
+      {% assign categories = "Lab outings,Group activities,Shared meals" | split: "," %}
+      {% for category in categories %}
+        <figure class="activity-placeholder">
+          <div class="activity-frame"><strong>{{ category }}</strong><span>Photo to come</span></div>
+          <figcaption>Activity caption to come</figcaption>
+        </figure>
       {% endfor %}
-    </div>
-  {% else %}
-    <p>Photos and stories from lab outings, group activities, and shared meals will appear here.</p>
-  {% endif %}
+    {% endfor %}
+  </div>
 </section>

@@ -43,6 +43,9 @@
       .activity-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 1rem; }
       .activity-gallery figure { margin: 0; }
       .activity-gallery img { width: 100%; height: auto; border-radius: .5rem; }
+      .activity-frame { aspect-ratio: 4 / 3; display: grid; align-content: center; justify-items: center; border: 2px dashed #85a9a6; border-radius: .5rem; background: #f2f7f6; color: #244e51; }
+      .activity-frame span, .activity-placeholder figcaption { font-size: .875rem; color: #4b6266; }
+      .activity-placeholder figcaption { padding: .45rem .15rem; }
       @media (max-width: 38rem) { .research-row { grid-template-columns: 1fr; } }
       @media (max-width: 48rem) { .cohort { grid-template-columns: 1fr; } }
       @media (max-width: 38rem) { .intro { grid-template-columns: 1fr; } .intro img { max-width: 14rem; } }
