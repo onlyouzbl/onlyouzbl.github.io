@@ -8,7 +8,7 @@ description: Bolin Zhang's academic homepage at Ningbo University. Research on v
 ## About Me
 {: #about-me }
 
-I am a lecturer at the [College of Artificial Intelligence](https://eecs.nbu.edu.cn/), [Ningbo University](https://www.nbu.edu.cn/). I study **cross-modal retrieval**. One question at the center of my work is how to find the few seconds in a long video that match a sentence.
+I am a lecturer at the [School of Artificial Intelligence](https://eecs.nbu.edu.cn/), [Ningbo University](https://www.nbu.edu.cn/). I study **cross-modal retrieval**. One question at the center of my work is how to find the few seconds in a long video that match a sentence.
 
 My research interests include video moment localization and hashing for large-scale retrieval. I also work on matching food photographs with recipes, where a dish’s name, ingredients, and cooking instructions each offer different clues.
 
