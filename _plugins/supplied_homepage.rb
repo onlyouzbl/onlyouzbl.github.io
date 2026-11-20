@@ -19,7 +19,7 @@ module SuppliedHomepage
 
     { '#news + div' => 'li, li a',
       '.papers' => 'article, h3 a, .resources a',
-      '#full-list' => 'li > :first-child' }.each do |selector, items|
+      '#full-list' => 'li > :first-child, .authors' }.each do |selector, items|
       before = page.at_css(selector)
       after = built.at_css(selector)
       raise "Missing homepage section #{selector}" unless before && after

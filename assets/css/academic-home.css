@@ -452,3 +452,7 @@ footer {
     color-scheme: dark;
   }
 }
+
+.author-legend { display: inline-block; margin-inline-start: .35em; font: normal .85rem/1.6 system-ui, sans-serif; }
+.author-legend span { white-space: nowrap; }
+.authors sup { margin-inline-start: .08em; line-height: 0; }

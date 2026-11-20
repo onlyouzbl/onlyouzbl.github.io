@@ -10,20 +10,7 @@
         {{- entry.title | escape -}}
       {%- endif %}
     </h3>
-    <p class="authors">
-      {%- for author in entry.author_array -%}
-        {%- unless forloop.first -%}, {% endunless -%}
-        {% if author.first == 'Bolin' and author.last == 'Zhang' -%}
-          <strong>
-            {{- author.first }}
-            {{ author.last -}}
-          </strong>
-        {%- else -%}
-          {{ author.first }}
-          {{ author.last }}
-        {%- endif -%}
-      {%- endfor -%}
-    </p>
+    <p class="authors">{% include home-authors.liquid %}</p>
     <p class="venue">{{ entry.journal | default: entry.booktitle }}, {{ entry.year }}.</p>
     {% if entry.annotation %}
       <p class="paper-summary">{{ entry.annotation }}</p>
