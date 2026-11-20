@@ -20,7 +20,7 @@ news_summaries:
   "10.1016/j.neucom.2026.135255": "Our model locates an object from an ambiguous description by resolving what the words refer to and selecting the relevant scene information."
   "10.1109/tbdata.2026.3702369": "DS-Model uses one network to guide a second network as it learns to recognize distracted driving."
   "10.3390/vehicles8040083": "ICK-PANet combines attention with pyramid convolutions to recognize distracted driving from visual cues at different scales."
-  "10.1109/tgrs.2025.3636865": "SpikeHCD uses a spiking transformer to detect changes between hyperspectral images of the same scene."
+  "10.1109/tgrs.2025.3636865": "SpikeHCD detects changes between hyperspectral images of the same scene."
   "10.1007/s13042-024-02520-w": "Our model learns to locate video moments from sentence descriptions without needing start and end times during training."
   "10.1145/3716388": "Our retrieval model learns from CLIP at the frame, clip, and video levels to find videos in which only part of the footage matches the query."
   "10.1007/s10489-020-01797-y": "We train an autoencoder to cluster unlabeled data and learn compact hash codes for searching large collections."

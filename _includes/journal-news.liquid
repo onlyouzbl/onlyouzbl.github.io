@@ -1,4 +1,4 @@
-{% assign news = site.data.journal_news | concat: page.news_milestones | sort: 'sort_date' | reverse %}
+{% assign news = site.data.journal_news | concat: site.data.news_milestones | sort: 'sort_date' | reverse %}
 {% for item in news %}
   {% if forloop.first %}<ul class="dated-list">{% endif %}
   {% if forloop.index == 5 %}

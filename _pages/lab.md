@@ -14,6 +14,12 @@ description: The Multimodal Understanding and Retrieval Lab at Ningbo University
   </div>
 </section>
 
+<section id="news" markdown="0">
+  <h2>Lab News</h2>
+  <p><a href="/#news">News from Bolin Zhang’s homepage</a></p>
+  {% include journal-news.liquid %}
+</section>
+
 <section id="members" aria-labelledby="members-heading">
   <h2 id="members-heading">Lab Members</h2>
   <div class="lab-lead">
@@ -38,17 +44,37 @@ description: The Multimodal Understanding and Retrieval Lab at Ningbo University
   </div>
 </section>
 
-<section id="research">
+<section id="research" markdown="0">
   <h2>Research Areas</h2>
-  <h3>Video Moment Retrieval from Large Video Collections</h3>
-  <p>Given a description such as “a person pushes a bicycle across the street,” we want to find both the right video in a collection and the exact interval it describes. We study how to distinguish similar actions and learn their boundaries when training examples have captions but no timestamps.</p>
-  <h3>Video Anomaly Detection</h3>
-  <p>We study how to identify moments in long recordings that warrant a closer look. Context matters: running on a track may mean something different from running through a crowded station.</p>
-  <h3>Spiking Neural Networks for Video</h3>
-  <p>Consecutive frames often contain much of the same information. We explore whether spiking neural networks can reduce computation by responding to changes while retaining the cues needed to recognize an event.</p>
+  {% for area in site.data.lab_research %}
+  <article class="research-row">
+    <div class="research-media">
+      <img loading="lazy" width="440" height="232" src="/assets/img/lab-research/{{ area.asset }}.png" data-animation="/assets/img/lab-research/{{ area.asset }}.gif" alt="{{ area.alt | escape }}">
+      <button type="button" hidden aria-label="Play animation: {{ area.title | escape }}">Play</button>
+    </div>
+    <div><h3>{{ area.title }}</h3><p>{{ area.description }}</p></div>
+  </article>
+  {% endfor %}
 </section>
 
-<section id="publications">
-  <h2>Publications</h2>
-  <p><a href="/#publications">Browse Bolin Zhang’s publications</a></p>
+<section id="publications" markdown="0">
+  <h2>Lab Publications</h2>
+  <p><a href="/#publications">Publications on Bolin Zhang’s homepage</a></p>
+  <details class="lab-publications">
+    <summary>View all publications ({% bibliography_count %})</summary>
+    {% bibliography --template home-citation %}
+  </details>
+</section>
+
+<section id="lab-life" markdown="0">
+  <h2>Lab Life</h2>
+  {% if site.data.lab_activities.size > 0 %}
+    <div class="activity-gallery">
+      {% for activity in site.data.lab_activities %}
+        <figure><img loading="lazy" src="{{ activity.photo | relative_url | escape }}" alt="{{ activity.alt | escape }}"><figcaption>{{ activity.caption | escape }}</figcaption></figure>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Photos and stories from lab outings, group activities, and shared meals will appear here.</p>
+  {% endif %}
 </section>

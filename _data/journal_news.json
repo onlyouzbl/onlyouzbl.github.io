@@ -50,7 +50,7 @@
     "date": "Nov 2025",
     "sort_date": "2025-11-25",
     "status": "DOI registered",
-    "summary": "SpikeHCD uses a spiking transformer to detect changes between hyperspectral images of the same scene."
+    "summary": "SpikeHCD detects changes between hyperspectral images of the same scene."
   },
   {
     "title": "Multi-Grained Alignment with Knowledge Distillation for Partially Relevant Video Retrieval",

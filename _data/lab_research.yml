@@ -1,0 +1,16 @@
+- asset: cross-modal
+  title: Cross-Modal Retrieval
+  alt: A text query selects the sailboat picture from a kite, a boat, and a cat.
+  description: Type “a sailboat on the water” and the system finds a matching picture. We study how to connect words with visual details so a query in one medium can retrieve results in another.
+- asset: video-moments
+  title: Video Moment Retrieval from Large Video Collections
+  alt: A cat jumps over a box in the middle clip, and the matching interval lights up on the timeline.
+  description: Where in a whole collection of videos does a cat jump over a box? We search for the right recording and pinpoint the few seconds that show the action.
+- asset: recipes
+  title: Recipe Retrieval
+  alt: A plate of tomato pasta is matched to a recipe from three choices.
+  description: A plate of pasta can resemble several recipes. We match a food photo to ingredients and cooking instructions, using clues such as tomato pieces, basil leaves, and the shape of the pasta.
+- asset: hashing
+  title: Cross-Modal Hashing
+  alt: A sailboat picture and its description become two binary codes that differ by one bit.
+  description: We encode images and text as short strings of bits. If a picture and a sentence describe the same thing, their codes should differ in few positions, making large collections faster to search.

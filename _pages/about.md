@@ -2,19 +2,15 @@
 layout: academic-home
 title: About Me
 permalink: /
-news_milestones:
-  - sort_date: "2024-07-01"
-    date: July 2024
-    summary: I joined Ningbo University after completing my Ph.D. at Hunan University.
-description: Bolin Zhang's academic homepage at Ningbo University. Research on video moment retrieval, cross-modal hashing, and brain-inspired intelligence.
+description: Bolin Zhang's academic homepage at Ningbo University. Research on video moment retrieval, recipe retrieval, and cross-modal hashing.
 ---
 
 ## About Me
 {: #about-me }
 
-I am a lecturer at the [College of Artificial Intelligence](https://eecs.nbu.edu.cn/), [Ningbo University](https://www.nbu.edu.cn/). I study **cross-modal retrieval** and **brain-inspired intelligence**. One question at the center of my work is how to find the few seconds in a long video that match a sentence.
+I am a lecturer at the [College of Artificial Intelligence](https://eecs.nbu.edu.cn/), [Ningbo University](https://www.nbu.edu.cn/). I study **cross-modal retrieval**. One question at the center of my work is how to find the few seconds in a long video that match a sentence.
 
-My research interests include video moment localization, hashing for large-scale retrieval, and spiking neural networks. I also work on matching food photographs with recipes, where a dish’s name, ingredients, and cooking instructions each offer different clues.
+My research interests include video moment localization and hashing for large-scale retrieval. I also work on matching food photographs with recipes, where a dish’s name, ingredients, and cooking instructions each offer different clues.
 
 I received my Ph.D. from Hunan University in 2024, advised by [Bin Jiang](https://csee.hnu.edu.cn/people/jiangbin) and [Chao Yang](https://csee.hnu.edu.cn/people/yangchao). With support from the China Scholarship Council, I visited the [Contents Science Lab](https://www.cs.is.i.nagoya-u.ac.jp/) at Nagoya University and worked with [Ichiro Ide](https://www.cs.is.i.nagoya-u.ac.jp/users/ide/) and [Takahiro Komamizu](https://taka-coma.pro/).
 
@@ -25,7 +21,7 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 
 <div class="lab-intro">
   <img class="lab-logo" src="{{ 'assets/img/lin-ai-lab.svg' | relative_url }}" width="1400" height="580" alt="LIN-AI Lab · 麟智实验室">
-  <p>At Ningbo University, the <strong>Multimodal Understanding and Retrieval Lab</strong> (<span lang="zh-CN">多模态理解与检索实验室</span>) studies how to search and interpret video. We work on finding events from text descriptions, detecting unusual activity in long recordings, and making video analysis more efficient with spiking neural networks. <a href="https://onlyouzbl.github.io/lab/">Explore LIN-AI Lab</a></p>
+  <p>At Ningbo University, the <strong>Multimodal Understanding and Retrieval Lab</strong> (<span lang="zh-CN">多模态理解与检索实验室</span>) studies how to search across text, images, and video. We locate events in video collections, match food photos to recipes, and develop compact hash codes for fast cross-modal search. <a href="https://onlyouzbl.github.io/lab/">Explore LIN-AI Lab</a></p>
 </div>
 
 ## News
