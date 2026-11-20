@@ -35,7 +35,7 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 {% include journal-news.liquid %}
 </div>
 
-<h2 id="publications">Publications <small class="author-legend"><span><sup>*</sup> First author</span> · <span><sup>✉</sup> Corresponding author</span></small></h2>
+<h2 id="publications">Publications <small class="author-legend">Bolin Zhang: <span><sup>*</sup> First author</span> · <span><sup>✉</sup> Corresponding author</span></small></h2>
 
 <div class="papers" markdown="0">
 {% bibliography --template home-paper --group_by none %}

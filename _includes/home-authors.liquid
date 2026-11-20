@@ -3,7 +3,11 @@
 {%- for author in entry.author_array -%}
   {%- unless forloop.first %}, {% endunless -%}
   {%- assign name = author.first | append: ' ' | append: author.last | strip -%}
-  {%- if name == 'Bolin Zhang' -%}<strong>{{ name | escape }}</strong>{%- else -%}{{ name | escape }}{%- endif -%}
-  {%- if forloop.first -%}<sup title="First author">*</sup>{%- endif -%}
-  {%- if contacts contains name -%}<sup title="Corresponding author">✉</sup>{%- endif -%}
+  {%- if name == 'Bolin Zhang' -%}
+    <strong>{{ name | escape }}</strong>
+    {%- if forloop.first -%}<sup title="First author">*</sup>{%- endif -%}
+    {%- if contacts contains name -%}<sup title="Corresponding author">✉</sup>{%- endif -%}
+  {%- else -%}
+    {{- name | escape -}}
+  {%- endif -%}
 {%- endfor -%}
