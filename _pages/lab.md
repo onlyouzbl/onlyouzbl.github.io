@@ -2,6 +2,11 @@
 layout: lab
 permalink: /lab/
 title: LIN-AI Lab
+students:
+  - {}
+  - english_name: JiaPeng Li
+    chinese_name: 李嘉鹏
+    photo: /assets/img/lab-members/jiapeng-li.jpg
 description: The Multimodal Understanding and Retrieval Lab at Ningbo University, led by Bolin Zhang.
 ---
 
@@ -30,13 +35,17 @@ description: The Multimodal Understanding and Retrieval Lab at Ningbo University
   <div class="cohort">
     <div><h3>Students</h3><p>Entered <time datetime="2026-09">September 2026</time></p></div>
     <div class="students">
-      {% for slot in (1..2) %}
+      {% for student in page.students %}
       <div class="student">
-        <div class="student-photo" aria-label="Student photo, pending" role="img"></div>
+        {% if student.photo %}
+          <img class="student-photo" src="{{ student.photo | relative_url }}" alt="{{ student.english_name | escape }}’s avatar">
+        {% else %}
+          <div class="student-photo" aria-label="Student photo, pending" role="img"></div>
+        {% endif %}
         <dl>
-          <dt>English name</dt><dd></dd>
-          <dt>Chinese name</dt><dd></dd>
-          <dt>Research interests</dt><dd></dd>
+          <dt>English name</dt><dd>{{ student.english_name | escape }}</dd>
+          <dt>Chinese name</dt><dd lang="zh-CN">{{ student.chinese_name | escape }}</dd>
+          <dt>Research interests</dt><dd>{{ student.research_interests | escape }}</dd>
         </dl>
       </div>
       {% endfor %}
