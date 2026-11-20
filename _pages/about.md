@@ -45,7 +45,9 @@ Outside the lab, I enjoy running and traveling in search of regional food. Somed
 ## Projects
 {: #projects }
 
-### 浙江省自然科学基金青年项目
+<h3 lang="en">Young Scientists Program of the Zhejiang Provincial Natural Science Foundation</h3>
+<p lang="zh-CN">浙江省自然科学基金青年项目</p>
+<p><time datetime="2025-01">2025.01</time> – <time datetime="2026-12">2026.12</time></p>
 
 ## Honors & Awards
 {: #honors }
