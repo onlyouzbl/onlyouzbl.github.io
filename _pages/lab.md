@@ -3,10 +3,14 @@ layout: lab
 permalink: /lab/
 title: LIN-AI Lab
 students:
-  - {}
+  - english_name: LinJunShao
+    chinese_name: 邵麟钧
+    photo: /assets/img/lab-members/linjun-shao.jpg
+    research_interests: Video retrieval
   - english_name: JiaPeng Li
     chinese_name: 李嘉鹏
     photo: /assets/img/lab-members/jiapeng-li.jpg
+    research_interests: Video retrieval
 description: The Multimodal Understanding and Retrieval Lab at Ningbo University, led by Bolin Zhang.
 ---
 
